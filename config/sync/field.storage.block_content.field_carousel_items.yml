@@ -1,0 +1,19 @@
+uuid: acf75172-57f9-42e2-b5fd-b7772e3cc476
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_carousel_items
+field_name: field_carousel_items
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

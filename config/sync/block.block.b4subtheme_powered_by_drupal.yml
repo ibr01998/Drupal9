@@ -1,0 +1,22 @@
+uuid: bcbc849a-9fbd-4ed4-89a0-d0b6f16e37de
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b4subtheme
+_core:
+  default_config_hash: pCYcyBIVbwKUmraga_6Ycz5P-bhQJLJS_8HtOFpMq-o
+id: b4subtheme_powered_by_drupal
+theme: b4subtheme
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Mario'
+  label_display: '0'
+  provider: system
+visibility: {  }

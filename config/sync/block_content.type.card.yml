@@ -1,0 +1,8 @@
+uuid: f2574499-287f-4676-9480-08816090ae11
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: card
+revision: 0
+description: 'Bootstrap card component'

@@ -1,0 +1,19 @@
+uuid: 2c43bedc-9b11-4ac4-813d-a8ba761cb364
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_item
+    - field.storage.block_content.field_title
+id: block_content.carousel_item.field_title
+field_name: field_title
+entity_type: block_content
+bundle: carousel_item
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 82c5008f-e03c-470c-8cdc-3c235a9bc7e2
+langcode: en
+status: true
+dependencies: {  }
+name: portfol
+label: portfolio
+effects:
+  83cb5f6e-943e-4e7c-be61-d1705349d658:
+    uuid: 83cb5f6e-943e-4e7c-be61-d1705349d658
+    id: image_resize
+    weight: 1
+    data:
+      width: 700
+      height: 500

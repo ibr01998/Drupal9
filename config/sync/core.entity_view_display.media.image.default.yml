@@ -1,0 +1,41 @@
+uuid: 0e398580-6c8f-4936-8b20-63c23c76feca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - image.style.portfol
+    - media.type.image
+  module:
+    - ds
+    - image
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: portfol
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

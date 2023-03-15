@@ -1,0 +1,62 @@
+uuid: dcc33fba-c292-4381-a119-a1d4520b71dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          2f99f01e-a184-4e60-ae0a-62e6419463ef:
+            uuid: 2f99f01e-a184-4e60-ae0a-62e6419463ef
+            region: first
+            configuration:
+              id: 'inline_block:card'
+              label: 'Card One'
+              label_display: visible
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 2
+              block_serialized: null
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  layout_builder__layout: true

@@ -1,0 +1,104 @@
+uuid: 49a5151c-5a66-427e-804f-78646035ce69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_featured
+    - node.type.portfolio
+  module:
+    - ds
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: ds_2col
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          wrappers:
+            left: div
+            right: div
+          outer_wrapper: div
+          attributes: ''
+          link_attribute: ''
+          link_custom: ''
+          classes:
+            layout_class:
+              row: row
+            left:
+              col-md-8: col-md-8
+            right:
+              col-md-4: col-md-4
+        components:
+          db441c0e-c5dd-4f46-8c89-416e2636f8a0:
+            uuid: db441c0e-c5dd-4f46-8c89-416e2636f8a0
+            region: right
+            configuration:
+              id: 'field_block:node:portfolio:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          801890d0-f4e2-4fe1-8be1-50c39964c585:
+            uuid: 801890d0-f4e2-4fe1-8be1-50c39964c585
+            region: left
+            configuration:
+              id: 'field_block:node:portfolio:field_featured'
+              label: Featured
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.portfolio.full
+targetEntityType: node
+bundle: portfolio
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_featured:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
