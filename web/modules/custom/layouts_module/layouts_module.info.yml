@@ -1,0 +1,5 @@
+name: layouts_module
+type: module
+description: Bootstrap4 layouts
+package: AI
+core_version_requirement: ^9 || ^10

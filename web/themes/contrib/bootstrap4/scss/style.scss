@@ -1,0 +1,8 @@
+@import 'variables_bootstrap';
+@import 'variables_theme';
+@import '../dist/bootstrap/4.6.2/scss/bootstrap';
+@import 'mixins';
+@import 'theme';
+@import 'bootstrap_fix';
+@import 'custom/card/card';
+@import "custom/carousel/carousel";

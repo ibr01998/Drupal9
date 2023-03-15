@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - in_preview: Whether the plugin is being rendered in preview mode.
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+  <div{{ attributes }}>
+
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content', 'row') }}>
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              {% for item in items %}
+
+              <li data-target="#carousel--{{ carousel_id }}" data-slide-to="{{ loop.index0 }}" class="{{ loop.first ? 'active' }}"></li>
+              {% endfor %}
+            </ol>
+
+            <div class="carousel-inner">
+              {% for item in items %}
+              <div class="carousel-item {{ loop.first ? 'active' }}">
+              {{ item }}
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        {{ content.content|without('field_carousel_items') }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
