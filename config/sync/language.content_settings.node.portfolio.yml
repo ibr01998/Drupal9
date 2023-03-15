@@ -1,0 +1,18 @@
+uuid: 82f5336d-a755-4a55-949f-68e0cee438e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.portfolio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.portfolio
+target_entity_type_id: node
+target_bundle: portfolio
+default_langcode: site_default
+language_alterable: true

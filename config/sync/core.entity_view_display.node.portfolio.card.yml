@@ -142,4 +142,5 @@ content:
     region: ds_content
 hidden:
   field_featured: true
+  langcode: true
   links: true

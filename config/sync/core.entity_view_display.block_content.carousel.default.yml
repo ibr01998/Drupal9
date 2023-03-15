@@ -39,4 +39,5 @@ content:
             lb: ''
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  langcode: true

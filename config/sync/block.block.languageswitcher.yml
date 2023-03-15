@@ -1,0 +1,28 @@
+uuid: b9435d52-b216-497a-afdf-27e91935fb10
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bootstrap4
+id: languageswitcher
+theme: bootstrap4
+region: nav_main
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: visible
+  provider: language
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      nl: nl

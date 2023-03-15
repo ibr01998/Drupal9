@@ -118,4 +118,5 @@ content:
             suffix: ''
     weight: 2
     region: ds_content
-hidden: {  }
+hidden:
+  langcode: true
